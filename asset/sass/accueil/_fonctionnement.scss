@@ -1,0 +1,38 @@
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  &__btns {
+  display: flex;
+  flex-direction: column;
+  button{
+    display: flex;
+    background-color: $color-light-gray;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin: 10px;
+
+    span{
+      position: relative;
+      left: -30px;
+      padding: 3px 7px;
+      border-radius: 50%;
+      background-color: $color-primaire;
+      color: white;
+    }
+
+    i{
+      margin-right: 20px;
+      color: gray;
+    }
+
+    &:hover i{
+      color: $color-primaire;
+    }
+  }
+}
+
+
+}

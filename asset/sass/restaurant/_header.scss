@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    
+    
+    i{
+        font-size: 50px;
+        color: black;
+
+       
+    }
+}
+
+.hero{
+    display: flex;
+    background-color: white;
+    
+    img{
+        width: 120%;   
+    }
+}
+
+.title{
+    display: flex;
+    justify-content:space-between;
+    font-family: shrikhand;
+    font-size: 25px;
+    .heart-container{
+        font-size: 25PX;
+    }
+
+    }

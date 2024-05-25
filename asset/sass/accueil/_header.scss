@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 240px;
+        padding: 20px 0px;
+
+    }
+
+
+    form {
+        width: 100%;
+        background-color: $color-gray;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+        gap: 10px;
+        border-top: 3px gray solid;
+        border-bottom: 3px gray solid;
+
+        input {
+            background: transparent;
+            border: none;
+        }
+
+        ::placeholder {
+            text-align: center;
+            font-weight: 600;
+        }
+
+    }
+
+}
+
+.hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        align-items: center;
+        background-color: $color-light-gray;
+        *{
+            text-align: center;
+        }
+}

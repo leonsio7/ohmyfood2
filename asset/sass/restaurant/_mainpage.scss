@@ -1,0 +1,37 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__btns{
+        display: flex;
+        flex-direction: column;
+    }
+    
+        button{
+            display: flex;
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin: 10px;
+            justify-content: space-between;
+            align-items: center;
+        
+            span{
+              border: 1px red solid;
+              display: flex;
+              color: black;
+         
+            }
+        }
+    }
+    
+    
+
+
+.menu_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}

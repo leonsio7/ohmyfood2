@@ -13,6 +13,9 @@ body * {
     margin: 0px;
     padding: 0px;
   }
+  .main{
+    background-color: $color-light-gray;
+  }
 .shrikhand {
     font-family: shrikhand;
 }
@@ -24,6 +27,8 @@ body * {
     border: none;
     color: white;
     font-weight: 600;
+    margin-top: 20px;
+   
 
 }
 

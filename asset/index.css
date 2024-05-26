@@ -8,6 +8,10 @@ body * {
   padding: 0px;
 }
 
+.main {
+  background-color: #f6f6f6;
+}
+
 .shrikhand {
   font-family: shrikhand;
 }
@@ -19,6 +23,7 @@ body * {
   border: none;
   color: white;
   font-weight: 600;
+  margin-top: 20px;
 }
 
 footer {
@@ -35,17 +40,17 @@ footer a {
   color: white;
 }
 
-header {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-header img {
+.header .header_logo {
   width: 240px;
   padding: 20px 0px;
 }
-header form {
+.header form {
   width: 100%;
   background-color: #eaeaea;
   display: flex;
@@ -55,15 +60,15 @@ header form {
   border-top: 3px gray solid;
   border-bottom: 3px gray solid;
 }
-header form input {
+.header form input {
   background: transparent;
   border: none;
 }
-header form ::-moz-placeholder {
+.header form ::-moz-placeholder {
   text-align: center;
   font-weight: 600;
 }
-header form ::placeholder {
+.header form ::placeholder {
   text-align: center;
   font-weight: 600;
 }
@@ -144,8 +149,9 @@ header form ::placeholder {
   padding: 20px 10px;
   background-color: white;
 }
-.restaurants__cards .card__content .card__txt {
-  border: 1px red solid;
+.restaurants__cards .card__content .card__txt p {
+  padding: 5px;
+  font-weight: 350;
 }
 .restaurants__cards .card__content .heart-container {
   font-size: 25px;
@@ -153,15 +159,27 @@ header form ::placeholder {
 
 .header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.header i {
-  font-size: 50px;
+.header a {
+  position: relative;
+  font-size: 25px;
   color: black;
+  left: -165px;
+  bottom: -30px;
+}
+.header img {
+  width: 200px;
+  padding: 20px 0px;
+  padding-top: 0;
 }
 
 .hero {
   display: flex;
   background-color: white;
+  padding: 0;
 }
 .hero img {
   width: 120%;
@@ -170,9 +188,45 @@ header form ::placeholder {
 .title {
   display: flex;
   justify-content: space-between;
+  margin-right: 10px;
   font-family: shrikhand;
-  font-size: 25px;
+  font-size: 18px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .title .heart-container {
   font-size: 25PX;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu__btns {
+  display: flex;
+  flex-direction: column;
+}
+.menu button {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu button span {
+  border: 1px red solid;
+  display: flex;
+  color: black;
+}
+
+.menu_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
 }/*# sourceMappingURL=index.css.map */

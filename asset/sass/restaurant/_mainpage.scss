@@ -5,7 +5,12 @@
     &__btns{
         display: flex;
         flex-direction: column;
-    }
+
+ }
+
+ .menu__title{
+    padding: 20px;
+}
     
         button{
             display: flex;
@@ -16,6 +21,7 @@
             margin: 10px;
             justify-content: space-between;
             align-items: center;
+            text-align: left;
         
             span{
               border: 1px red solid;

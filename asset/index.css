@@ -24,6 +24,28 @@ body * {
   color: white;
   font-weight: 600;
   margin-top: 20px;
+  transition: all 1s ease-in-out;
+}
+.btn_commande :hover {
+  box-shadow: 10px 5px 5px red;
+  opacity: 0.9;
+}
+
+.heart-container {
+  font-size: 25px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heart-container:hover .fa-regular {
+  opacity: 0;
+}
+.heart-container .fa-solid {
+  position: absolute;
+  opacity: 0;
 }
 
 footer {
@@ -208,6 +230,9 @@ footer a {
   display: flex;
   flex-direction: column;
 }
+.menu .menu__title {
+  padding: 20px;
+}
 .menu button {
   display: flex;
   background-color: white;
@@ -217,6 +242,7 @@ footer a {
   margin: 10px;
   justify-content: space-between;
   align-items: center;
+  text-align: left;
 }
 .menu button span {
   border: 1px red solid;

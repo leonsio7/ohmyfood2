@@ -24,10 +24,10 @@ body * {
   color: white;
   font-weight: 600;
   margin-top: 20px;
-  transition: all 1s ease-in-out;
+  transition: all 600ms ease-in-out;
 }
-.btn_commande :hover {
-  box-shadow: 10px 5px 5px red;
+.btn_commande:hover {
+  box-shadow: 1px 1px 1px #FF79DA;
   opacity: 0.9;
 }
 
@@ -43,9 +43,17 @@ body * {
 .heart-container:hover .fa-regular {
   opacity: 0;
 }
+.heart-container:hover .fa-solid {
+  opacity: 1;
+}
 .heart-container .fa-solid {
   position: absolute;
   opacity: 0;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 1s ease-in-out;
 }
 
 footer {
@@ -79,8 +87,9 @@ footer a {
   justify-content: center;
   padding: 20px 0px;
   gap: 10px;
-  border-top: 3px gray solid;
-  border-bottom: 3px gray solid;
+  border-top: 1px gray solid;
+  border-bottom: 1px gray solid;
+  box-shadow: 1px 3px 8px 2px gray;
 }
 .header form input {
   background: transparent;
@@ -99,12 +108,19 @@ footer a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px;
+  padding: 40px;
   align-items: center;
   background-color: #f6f6f6;
+  gap: 10px;
 }
 .hero * {
   text-align: center;
+}
+
+.fonctionnement__title {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .fonctionnement {
@@ -115,6 +131,7 @@ footer a {
 .fonctionnement__btns {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 .fonctionnement__btns button {
   display: flex;
@@ -153,6 +170,8 @@ footer a {
 .restaurants__cards {
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
 }
 .restaurants__cards .card {
   border-radius: 30px;
@@ -198,12 +217,12 @@ footer a {
   padding-top: 0;
 }
 
-.hero {
+.hero__main {
   display: flex;
   background-color: white;
   padding: 0;
 }
-.hero img {
+.hero__main img {
   width: 120%;
 }
 
@@ -221,6 +240,10 @@ footer a {
   font-size: 25PX;
 }
 
+.content {
+  background-color: #f6f6f6;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -233,21 +256,44 @@ footer a {
 .menu .menu__title {
   padding: 20px;
 }
-.menu button {
+.menu .card {
   display: flex;
   background-color: white;
-  padding: 20px;
   border-radius: 20px;
-  font-weight: 600;
   margin: 10px;
-  justify-content: space-between;
   align-items: center;
   text-align: left;
+  overflow: hidden;
+  justify-content: space-between;
 }
-.menu button span {
-  border: 1px red solid;
+.menu .card__title {
+  margin: 15px 0px;
+  margin-left: 20px;
+  width: 80%;
+  overflow: hidden;
+}
+.menu .card__title h3, .menu .card__title p {
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+.menu .card__price {
   display: flex;
   color: black;
+  margin-right: 10px;
+}
+.menu .card__checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99E2D0;
+  color: white;
+  width: 0px;
+  height: 70px;
+  transition: width 1s ease-in-out;
+}
+.menu .card:hover .card__checked {
+  width: 70px;
 }
 
 .menu_btn {

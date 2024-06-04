@@ -28,10 +28,10 @@ body * {
     color: white;
     font-weight: 600;
     margin-top: 20px;
-    transition: all 1s ease-in-out;
+    transition: all 600ms ease-in-out;
 
-   :hover{
-        box-shadow: 10px 5px 5px red;
+   &:hover{
+        box-shadow: 1px 1px 1px $color-secondaire;
         opacity: 0.9;
         
     }
@@ -52,9 +52,20 @@ body * {
     }
 
     
+    &:hover .fa-solid{
+        opacity: 1;
+    }
+
     .fa-solid{
         position: absolute;
         opacity: 0;
+
+    background: -webkit-linear-gradient($color-secondaire, $color-primaire);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 1s ease-in-out;
+
     }
 }
 

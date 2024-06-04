@@ -1,41 +1,74 @@
-.menu{
+.content {
+    background-color: $color-light-gray;
+}
+.menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    &__btns{
+
+    &__btns {
         display: flex;
         flex-direction: column;
 
- }
+    }
 
- .menu__title{
-    padding: 20px;
-}
-    
-        button{
-            display: flex;
-            background-color: white;
-            padding: 20px;
-            border-radius: 20px;
-            font-weight: 600;
-            margin: 10px;
-            justify-content: space-between;
-            align-items: center;
-            text-align: left;
-        
-            span{
-              border: 1px red solid;
-              display: flex;
-              color: black;
-         
+    .menu__title {
+        padding: 20px;
+    }
+
+    //article
+    .card {
+        display: flex;
+        background-color: white;
+        border-radius: 20px;
+        margin: 10px;
+        align-items: center;
+        text-align: left;
+        overflow: hidden;
+        justify-content: space-between;
+
+        &__title {
+            margin: 15px 0px;
+            margin-left: 20px;
+            width: 80%;
+            overflow: hidden;
+
+            h3,p{
+                text-overflow: ellipsis;
+                text-wrap: nowrap;
+                overflow: hidden;
             }
         }
+
+        &__price {
+            display: flex;
+            color: black;
+            margin-right: 10px;
+
+        }
+
+        &__checked {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $color-tertiaire;
+            color: white;
+            width: 0px;
+            height: 70px;
+            transition: width 1s ease-in-out;
+
+        }
+        &:hover .card__checked {
+            width: 70px;
+        
+        }
     }
-    
-    
+}
 
 
-.menu_btn{
+
+
+.menu_btn {
     display: flex;
     justify-content: center;
     align-items: center;

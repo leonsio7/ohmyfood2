@@ -1,3 +1,9 @@
+.fonctionnement__title {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -6,6 +12,10 @@
   &__btns {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
+
+  
+
   button{
     display: flex;
     background-color: $color-light-gray;
@@ -13,6 +23,7 @@
     border-radius: 20px;
     font-weight: 600;
     margin: 10px;
+    
 
     span{
       position: relative;

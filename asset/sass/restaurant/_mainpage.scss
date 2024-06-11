@@ -1,5 +1,9 @@
 .content {
     background-color: $color-light-gray;
+    border-radius: 50px 50px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
 }
 .menu {
     display: flex;

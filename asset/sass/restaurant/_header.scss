@@ -36,7 +36,9 @@
     padding: 0;
     
     img{
-        width: 120%;   
+        width: 100%;   
+        height: 260px;
+        object-fit: cover;
     }
 }
 

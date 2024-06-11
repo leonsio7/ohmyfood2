@@ -20,9 +20,12 @@
     display: flex;
     background-color: $color-light-gray;
     padding: 20px;
+    border: none;
     border-radius: 20px;
     font-weight: 600;
     margin: 10px;
+    box-shadow: 1px 3px 8px 2px gray;
+    font-size: 16px;
     
 
     span{

@@ -1,0 +1,147 @@
+
+/* Media Query for Tablet 
+(min-width: 768px) and (max-width: 1024px)*/
+
+/* header*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+    
+    .header form {
+        width: 108%;
+        padding: 10px 20px;
+    }
+
+    .hero {
+        padding: 30px;
+        margin-top: -10px;
+    }
+
+    /*mainpage*/
+
+
+  .fonctionnement {
+    padding: 30px;
+  }
+
+  .fonctionnement__btns {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+
+
+  .restaurants {
+    padding: 30px;
+    padding-bottom: 100px;
+}
+
+.restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+  
+
+
+    /*footer*/
+
+    .footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .footer h4 {
+        font-size: 20px;
+    }
+
+    .footer .footer__ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+
+
+/* Media Query for Desktop (min-width: 1025px) */
+
+/*header*/
+
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 60px;
+    }
+
+    .header_logo {
+        width: 180px;
+        padding: 10px 0;
+    }
+
+    .header form {
+        width: 108%;
+        padding: 10px 30px;
+        
+    }
+
+    .hero {
+        padding: 50px;
+        margin-top: -15px;
+    }
+
+    /*mainpage*/
+
+
+  .fonctionnement {
+    padding: 40px;
+  }
+
+  .fonctionnement__btns {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .restaurants {
+    padding: 40px;
+    padding-bottom: 120px;
+}
+
+.restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+    /*footer*/
+
+    .footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    .footer h4 {
+        font-size: 22px;
+    }
+
+    .footer .footer__ul {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+
+
+
+

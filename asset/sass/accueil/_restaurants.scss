@@ -20,6 +20,27 @@
             border-radius: 30px;
             background-color: white;
             overflow: hidden;
+            position: relative;
+
+            &__new {
+                color: #008766;
+                background-color: $color-tertiaire;
+                font-weight: 400;
+                position: absolute;
+                z-index: 1;
+                top: 18px;
+                right: 25px;
+                border: 1px $color-tertiaire solid;
+                padding: 8px;
+                padding-right: 18px;
+                padding-left: 18px;
+                
+                
+                
+
+                
+                
+            }
         }
 
         img{

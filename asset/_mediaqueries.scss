@@ -1,71 +1,70 @@
-
-/* Media Query for Tablet 
-(min-width: 768px) and (max-width: 1024px)*/
-
+/* Media Query for Tablet (min-width: 768px) and (max-width: 1024px)*/
 /* header*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .header {
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 20px 40px;
-    }
-    
-    .header form {
-        width: 108%;
-        padding: 10px 20px;
-    }
-
-    .hero {
-        padding: 30px;
-        margin-top: -10px;
-    }
+@media (min-width: 768px) {
 
     /*mainpage*/
 
 
-  .fonctionnement {
-    padding: 30px;
-  }
+    .restaurants {
+        padding: 40px 10%;
+        padding-bottom: 120px;
 
-  .fonctionnement__btns {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
+        &__cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
-
-
-  .restaurants {
-    padding: 30px;
-    padding-bottom: 100px;
-}
-
-.restaurants__cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-  
-
-
-    /*footer*/
-
-    .footer {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 30px;
+            a {
+                width: 45%;
+            }
+        }
     }
 
-    .footer h4 {
+    .content {
+        max-width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .title {
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .menu {
+        max-width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    
+
+    h2 {
+        font-weight: 300;
         font-size: 20px;
     }
 
-    .footer .footer__ul {
-        flex-direction: row;
-        gap: 20px;
+    .menu .card__title {
+        width: 90%;
+
     }
+}
+
+    /* footer*/
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+        h4,
+        &__ul {
+            text-align: center;
+        }
+
+    }
+
+
 }
 
 
@@ -78,70 +77,62 @@
     .header {
         flex-direction: column;
         justify-content: space-between;
-        padding: 20px 60px;
-    }
 
-    .header_logo {
-        width: 180px;
-        padding: 10px 0;
-    }
 
-    .header form {
-        width: 108%;
-        padding: 10px 30px;
-        
+        &_logo {
+            width: 180px;
+            padding: 10px 0;
+        }
+
+        form {
+            width: 100%;
+        }
+
     }
 
     .hero {
         padding: 50px;
-        margin-top: -15px;
+
     }
 
     /*mainpage*/
 
 
-  .fonctionnement {
-    padding: 40px;
-  }
+    .fonctionnement {
+        padding: 40px 10%;
 
-  .fonctionnement__btns {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+        &__btns {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
 
-  .restaurants {
-    padding: 40px;
-    padding-bottom: 120px;
-}
+            button {
+                width: 30%;
+            }
+        }
+    }
 
-.restaurants__cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
+    
 
     /*footer*/
 
     .footer {
         flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: end;
+        align-items: center;
         padding: 40px;
+
+        h4 {
+            font-size: 22px;
+        }
+
+        .footer__ul {
+            flex-direction: row;
+            gap: 20px;
+            margin-right: 50px;
+        }
     }
 
-    .footer h4 {
-        font-size: 22px;
-    }
 
-    .footer .footer__ul {
-        flex-direction: row;
-        gap: 30px;
-    }
+
 }
-
-
-
-
-
